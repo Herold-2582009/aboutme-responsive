@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>About Me</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- HEADER ya Header... -->
+        <header>
+            <h1>About Me :)</h1>
+            <p>Welcome to my personal profile page :) </p>
+        </header>
+        <!-- NAVIGATION: Links ke section lainnya -->
+         <nav>
+            <a href="#profile">Profile</a> |
+            <a href="#About">About</a>  |
+            <a href="#hobbies">Hobbies</a> |
+            <a href="#academic">Academic</a> |
+            <a href="#contact">Contact</a>
+         </nav>
+         <hr>
+        <!-- MAIN: Memiliki styling berbeda, menggunakan -->
+        <!-- Menggunakan content GRID--> 
+        <main class="content-grid">
+            <section id="profile" class="profile">
+                <!-- COntoh positioning, elemen di atas foto-->
+                <span class="badge">
+                    STUDENT
+                </span>
+                <img
+                    class="profile-photo"
+                    src="Foto Kevin.png"
+                    alt="My Profile Photo"
+                >
+                <!-- container untuk info pribadi -->
+                <div class="profile-info"> 
+                    <h2>Herold Kevin Fergoodson</h2>
+                    <p>
+                        <strong>NIM: </strong>
+                        2582009
+                    </p>
+                    <p>
+                        <strong>Major: </strong>
+                        Information System
+                    </p>
+                </div>                
+            </section>
+            <section id="About" class="about">
+                <h2>About</h2>
+                    <p>
+                    Hello, my name is <b>Harold Kevin Fergoodson</b>. 
+                    Since 2025, I have been a student at the 
+                    Faculty of Information Technology at 
+                    Universitas Advent Indonesia.
+                    </p>
+                    <p>
+                    I am currently in my fourth semester at 
+                    Universitas Advent Indonesia and am delving 
+                    into programming.
+                    </p>
+            </section>
+            <section id="hobbies">
+                <h2>My Hobbies</h2>
+                <p>I have several Hobbies, such as:</p>
+                <div class="Hobbies">
+                    <ul>
+                        <li>Badminton</li>
+                        <li>Mini Soccer</li>
+                        <li>Touring</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="academic">
+                <h2>Academic Information</h2>
+                <p>My GPA History for the 2025/2026 academic year</p>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>No</th>
+                            <th>Semester</th>
+                            <th>Academic Year</th>
+                            <th>GPA</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Odd Semester</td>
+                            <td>2025/2026</td>
+                            <td>3.75</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Even Semester</td>
+                            <td>2025/2026</td>
+                            <td>3.59</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>
+                    Feel free to send me a message using
+                    the form below.
+                </p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="fullname">
+                            Full Name
+                        </label>
+                        <input 
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            minlength="3"
+                            maxlength="50"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address
+                        </label>
+                        <input 
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="message">
+                            Message
+                        </label>
+                        <textarea 
+                            id="message"
+                            name="message"
+                            minlength="10"
+                            maxlength="500"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit">
+                        Send Message
+                    </button>
+                </form>
+            </section>
+         </main>
+         <footer>
+            <p>
+                &copy; 2026 Herold Kevin Fergoodson | Web Programming I
+            </p>
+            <p>
+            Faculty of Information Technology<br>
+            Universitas Advent Indonesia
+            </p>
+         </footer>
+    </body>
+</html>
