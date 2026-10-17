@@ -3,37 +3,6 @@ img {
     height: auto;
 }
 
-a {
-    color: #B91C1C;
-}
-
-header {
-    color: #B91C1C;
-    background-color: #FFFFFF;
-}
-
-header h1 {
-    color: #B91C1C;
-}
-
-nav {
-    padding: 8px 20px;
-    text-align: right;
-}
-
-nav a {
-    display: inline-block;
-    margin: 4px 12px;
-    color: #B91C1C;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-nav a:hover {
-    color: #991B1B;
-    text-decoration: underline;
-}
 
 main {
     width: 90%;
@@ -43,8 +12,12 @@ main {
 
 .content-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
+}
+
+section {
+    min-width: 0;
 }
 
 section {
@@ -124,7 +97,6 @@ section h2 {
 }
 
 .table-container {
-    flex: 1;
     border: 1px solid #E5E7EB;
     border-radius: 8px;
     padding: 20px;
@@ -133,14 +105,16 @@ section h2 {
 table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 th,
 td {
     padding: 12px;
     border: 1px solid #E5E7EB;
+    text-align: left;
+    overflow-wrap: anywhere;
 }
-
 th {
     background-color: #B91C1C;
     color: #FFFFFF;
@@ -216,10 +190,6 @@ footer p {
 }
 
 @media (min-width: 768px) {
-    nav a {
-        margin: 8px 20px;
-        font-size: 1.1rem;
-    }
 
     .profile {
         flex-direction: row;
@@ -237,4 +207,29 @@ footer p {
     #contact {
         grid-column: 1 / -1;
     }
+
+    @media (max-width: 560px) {
+    section {
+        padding: 16px;
+    }
+
+    .table-container {
+        padding: 8px;
+    }
+
+    th,
+    td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 18%;
+    }
+
+    caption {
+        font-size: 0.9rem;
+    }
+}
 }
