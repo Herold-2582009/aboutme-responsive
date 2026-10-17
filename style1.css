@@ -193,10 +193,6 @@ footer p {
 }
 
 @media (min-width: 768px) {
-    nav a {
-        margin: 8px 20px;
-        font-size: 1.1rem;
-    }
 
     .profile {
         flex-direction: row;
