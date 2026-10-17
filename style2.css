@@ -190,11 +190,10 @@ footer p {
     }
 
     nav a {
-        font-size: 1rem;
+        margin: 8px 20px;
     }
-}
 
-    .HomePage {
+        .HomePage {
         flex-direction: row;
     }
 }
