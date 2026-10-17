@@ -43,8 +43,11 @@ main {
 
 .content-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
+}
+section {
+    min-width: 0;
 }
 
 section {
@@ -124,7 +127,6 @@ section h2 {
 }
 
 .table-container {
-    flex: 1;
     border: 1px solid #E5E7EB;
     border-radius: 8px;
     padding: 20px;
@@ -133,12 +135,15 @@ section h2 {
 table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 th,
 td {
     padding: 12px;
     border: 1px solid #E5E7EB;
+    text-align: left;
+    overflow-wrap: anywhere;
 }
 
 th {
