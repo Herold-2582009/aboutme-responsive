@@ -68,28 +68,6 @@ nav a[aria-current="page"] {
     text-underline-offset: 6px;
 }
 
-@media (max-width: 767px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    nav {
-        justify-content: center;
-        gap: 8px 18px;
-    }
-
-    nav a {
-        font-size: 1rem;
-    }
-}
-
-nav a[aria-current="page"] {
-    text-decoration: underline;
-    text-underline-offset: 6px;
-}
-
 main {
     width: 90%;
     max-width: 1000px;
@@ -207,10 +185,16 @@ footer p {
         text-align: center;
     }
 
+    nav {
+        justify-content: center;
+        gap: 8px 18px;
+    }
+
     nav a {
         font-size: 1rem;
     }
 }
+
     .HomePage {
         flex-direction: row;
     }
