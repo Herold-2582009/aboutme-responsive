@@ -184,13 +184,8 @@ footer p {
         text-align: center;
     }
 
-    nav {
-        justify-content: center;
-        gap: 8px 18px;
-    }
-
     nav a {
-        margin: 8px 20px;
+        margin: 1 rem;
     }
 
         .HomePage {
