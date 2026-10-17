@@ -23,39 +23,32 @@ img {
 
 header {
     display: flex;
-    flex-wrap: wrap;
+    padding: 24px 20px;
+    color: #B91C1C;
     justify-content: space-between;
     align-items: center;
-    gap: 12px 24px;
-    padding: 24px 20px;
     background-color: #FFFFFF;
     box-shadow: 0 4px 12px rgba(31, 41, 55, 0.08);
+    flex-wrap: wrap;
 }
 
 header h1 {
     margin: 0;
     font-size: 2rem;
-    color: #B91C1C;
-}
-
-header h1 a {
-    color: inherit;
-    text-decoration: none;
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 8px 28px;
-    padding: 0;
+    padding: 8px 20px;
+    text-align: right;
 }
 
 nav a {
+    display: inline-block;
+    margin: 4px 12px;
     color: #B91C1C;
     font-weight: bold;
-    font-size: 1.1rem;
     text-decoration: none;
+    font-size: 1.1rem;
 }
 
 nav a:hover {
