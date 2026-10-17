@@ -171,12 +171,31 @@ footer p {
     margin: 4px 0;
 }
 
-@media (min-width: 768px) {
-    nav a {
-        margin: 8px 20px;
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
     }
 
-    .HomePage {
-        flex-direction: row;
+    header h1 {
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 8px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 4px 8px;
+        font-size: 1rem;
     }
 }
