@@ -7,34 +7,6 @@ a {
     color: #B91C1C;
 }
 
-header {
-    color: #B91C1C;
-    background-color: #FFFFFF;
-}
-
-header h1 {
-    color: #B91C1C;
-}
-
-nav {
-    padding: 8px 20px;
-    text-align: right;
-}
-
-nav a {
-    display: inline-block;
-    margin: 4px 12px;
-    color: #B91C1C;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-nav a:hover {
-    color: #991B1B;
-    text-decoration: underline;
-}
-
 main {
     width: 90%;
     max-width: 1000px;
