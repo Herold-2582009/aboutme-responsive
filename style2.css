@@ -281,7 +281,36 @@ footer a:hover {
 .footer-bawah a {
     font-size: 0.85rem;
 }
- 
+
+.content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+}
+
+section {
+    min-width: 0;
+}
+
+.table-container {
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #E5E7EB;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
 @media (min-width: 768px) {
     nav a {
         margin: 8px 20px;
@@ -306,6 +335,31 @@ footer a:hover {
     .footer-bawah {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width: 560px) {
+    section {
+        padding: 16px;
+    }
+
+    .table-container {
+        padding: 8px;
+    }
+
+    th,
+    td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 18%;
+    }
+
+    caption {
+        font-size: 0.9rem;
     }
 }
  
