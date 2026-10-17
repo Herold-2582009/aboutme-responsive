@@ -180,8 +180,7 @@ footer p {
 @media (max-width: 767px) {
     header {
         flex-direction: column;
-        justify-content: center;
-        text-align: center;
+
     }
 
     nav a {
