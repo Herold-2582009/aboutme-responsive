@@ -177,7 +177,6 @@ footer {
 footer p {
     margin: 4px 0;
 }
-
 @media (max-width: 767px) {
     header {
         flex-direction: column;
