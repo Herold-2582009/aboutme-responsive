@@ -130,12 +130,7 @@ footer p {
     margin: 4px 0;
 }
 
-@media (min-width: 768px) {
-    nav a {
-        margin: 8px 20px;
-        font-size: 1.1rem;
-    }
-
+@media (min-width: 768px){
     .profile {
         flex-direction: row;
         text-align: left;
