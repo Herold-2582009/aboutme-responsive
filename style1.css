@@ -1,19 +1,50 @@
-/* ===== Halaman Biodata ===== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 24px auto;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+}
+
+section {
+    min-width: 0;
+}
+
+section {
+    padding: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(31, 41, 55, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #B91C1C;
+}
+
 .profile {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding-top: 56px;
     text-align: center;
+    position: relative;
 }
 
-.profile .profile-photo {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 200px;
-    aspect-ratio: 3 / 4;
+.profile-photo {
+    width: 200px;
+    aspect-ratio: 3/4;
     object-fit: cover;
     border-radius: 25px;
     box-shadow: 0 4px 12px rgba(31, 41, 55, 0.15);
@@ -31,34 +62,44 @@
     margin: 5px 0;
 }
 
+.about {
+    padding: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+}
+
 .badge {
     position: absolute;
     top: 16px;
     right: 16px;
     padding: 6px 12px;
-    border-radius: 20px;
     background-color: #B91C1C;
     color: #FFFFFF;
+    border-radius: 20px;
     font-size: 0.85rem;
     font-weight: bold;
 }
 
+.Hobbies {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
 #hobbies ol,
-#minat ul {
-    margin: 0;
+#hobbies ul {
     padding-left: 24px;
 }
 
-#hobbies li,
-#minat li {
-    margin-bottom: 8px;
+#hobbies li {
+    margin-bottom: 6px;
 }
 
 .table-container {
-    padding: 8px;
     border: 1px solid #E5E7EB;
     border-radius: 8px;
-    overflow-x: auto;
+    padding: 20px;
 }
 
 table {
@@ -67,26 +108,13 @@ table {
     table-layout: fixed;
 }
 
-caption {
-    padding-bottom: 8px;
-    text-align: left;
-    font-weight: bold;
-}
-
 th,
 td {
-    padding: 8px;
+    padding: 12px;
     border: 1px solid #E5E7EB;
-    font-size: 0.85rem;
     text-align: left;
     overflow-wrap: anywhere;
 }
-
-th:first-child,
-td:first-child {
-    width: 18%;
-}
-
 th {
     background-color: #B91C1C;
     color: #FFFFFF;
@@ -96,31 +124,112 @@ tbody tr:nth-child(even) {
     background-color: #F8FAFC;
 }
 
-/* ===== Responsif: tablet ke atas ===== */
+form {
+    display: grid;
+    gap: 16px;
+}
+
+.form-group {
+    display: grid;
+    gap: 6px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font: inherit;
+    background-color: #FFFFFF;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #B91C1C;
+    outline-offset: 2px;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #B91C1C;
+    color: #FFFFFF;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #991B1B;
+}
+
+footer {
+    margin-top: 24px;
+    padding: 24px 20px;
+    background-color: #1F2937;
+    color: #F8FAFC;
+    text-align: center;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
 @media (min-width: 768px) {
+
+    .profile {
+        flex-direction: row;
+        text-align: left;
+    }
+
     .content-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .profile,
     .about,
-    #academic {
+    #about,
+    #academic,
+    #contact {
         grid-column: 1 / -1;
     }
 
-    .profile {
-        flex-direction: row;
-        padding-top: 24px;
-        text-align: left;
+    @media (max-width: 560px) {
+    section {
+        padding: 16px;
     }
 
     .table-container {
-        padding: 20px;
+        padding: 8px;
     }
 
     th,
     td {
-        padding: 12px;
-        font-size: 1rem;
+        padding: 6px;
+        font-size: 0.8rem;
     }
+
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 18%;
+    }
+
+    caption {
+        font-size: 0.9rem;
+    }
+}
 }
